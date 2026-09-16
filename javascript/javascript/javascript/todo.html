@@ -5,12 +5,18 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Todo</title>
    <link rel="stylesheet" href="todo.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    Title: <input type="text" id="ti"><br>
-    Description: <input type="text" id="de"><br>
-    <button onclick="add()">Add</button>
+    <div id="fields">
+        <h1>Create a card</h1>
+        <input type="text" placeholder="Title" id="ti"><br>
+        <input type="text" placeholder="Description" id="de"><br>
+        <button onclick="add()">Add</button>
+    </div>
     <div id="cards" style="display: flex; flex-direction: column;">
         <div id="card"></div>
     </div>
