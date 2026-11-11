@@ -1,3 +1,6 @@
+:root {
+  --card-colour: #DADDD8;
+}
 
 * {
   font-family: "Google Sans", sans-serif;
@@ -8,9 +11,20 @@
     "GRAD" 0;
 }
 
-#fields {
-    display: inline-flex;
-    flex-direction: column;
-    background-color: red;
-    width: 300px;
+.card {
+  display: inline;
+  background-color: var(--card-colour);
+  width: fit-content;
+
 }
+
+.title-buttons {
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.title-buttons > button {
+  height: 25px;
+}
+
