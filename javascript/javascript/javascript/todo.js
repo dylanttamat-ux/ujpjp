@@ -38,6 +38,16 @@ function card(t, d) {
     return card
 }
 
+function tag(t) {
+    const tag = document.createElement('div')
+    tag.className = 'tag'
+
+    tag.insertAdjacentHTML('beforeend',title(t))
+
+
+    return tag
+}
+
 function add() {
     // Create new divs (for new card)
     // Get new values for each div
